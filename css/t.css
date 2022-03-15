@@ -1,0 +1,126 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+  body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    background-color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x:auto!important;
+    border-spacing: 0;
+  }
+  .container,
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  #wrapper {
+    display: flex;
+  }
+  #wrapper #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .img-profile {
+    height: 3rem;
+    width: 4rem;
+  }
+  .topbar {
+    height: 4.375rem;
+  }
+  .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  /* sidebar */
+  .sidebar {
+    width: 14rem !important;
+    height: auto;
+    color: white;
+  }  
+  .sidebar-dark .nav-item .nav-link {
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .sidebar-dark .nav-item .nav-link:hover {
+    color: aqua;
+  }
+  .sidebar-dark .nav-item .nav-link:active {
+    color: red;
+  }
+  .sidebar-dark .sidebar-brand {
+    color: white;
+    margin: 1rem;
+    padding-left: 1rem;
+    
+  }
+  .sidebar .sidebar-brand {
+    height: 4.375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+  
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.09rem;
+  }
+  .dropdown.no-arrow .dropdown-toggle::after {
+    display: none;
+  }
+  
+  
+
+  /* @media screen and (max-width: 1300px) {
+    table {width:100%;}
+    thead {display: none;}
+ 
+    tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+    tbody td {display: block;  text-align:center;}
+    tbody td:before { 
+         
+        display: block;
+        text-align:center;  
+    }
+ } */
+ @media screen and (max-width: 740px) {
+
+#userDropdown{
+    display: none;
+}
+
+ }
+ /* @media screen and (max-width: 740px) {
+
+  #accordionSidebar{
+      display: none;
+  }
+  
+   } */
+ 
+
+ 
+

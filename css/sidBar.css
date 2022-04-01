@@ -1,0 +1,70 @@
+.bg-primary {
+  background: #7CB9E8 !important;
+}
+
+#sidBarCss {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#sidBarCss ul {
+  font-size: 100;
+}
+
+#sidBarCss ul img {
+  margin-bottom: 10px;
+}
+
+#sidBarCss ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#sidBarCss ul li a {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 0px 10px 5px 0px;
+  text-decoration: none;
+}
+
+#sidBarCss ul li a :active {
+  color: greenyellow;
+}
+
+#sidBarCss ul li a :hover {
+  color: hotpink;
+  text-decoration: underline;
+  display: inline-block;
+  position: relative;
+}
+
+#sidBarCss ul li a :visited {
+  color: aqua;
+}
+
+b {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: larger;
+  margin-left: 30%;
+  text-align: center;
+}
+
+.content1 {
+  display: none;
+  position: absolute;
+  left: 300px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: red;
+}
+
+body button {
+  border-radius: 20px !important;
+}
+/*# sourceMappingURL=sidBar.css.map */

@@ -1,8 +1,5 @@
- <!-- Footer -->
-
-
-        </div>
-        <!-- End of Content Wrapper -->
-</body>
-
-</html>
+</div>
+  
+  </body>
+  
+  </html>

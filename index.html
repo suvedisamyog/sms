@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #151320;
+            color: white;
+
+
+
+        }
+
+        .center {
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 90px;
+
+        }
+
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            width: auto;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 900;
+            font-size: 900;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+
+            border-radius: 5px;
+            margin: 50px;
+
+        }
+
+
+
+
+        a:hover {
+            transform: scale(1.5);
+            background: rgb(216, 186, 186);
+            color: rgb(53, 43, 43);
+            border-radius: 100px;
+            box-shadow: 10px 10px 30px rgba(23, 15, 133, 0.5);
+        }
+
+        h3,
+        h4 {
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 50px;
+            margin-bottom: 100px;
+
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        h3 {
+            animation: blink 2s linear infinite;
+            word-spacing: 5px;
+
+        }
+
+        .typing {
+            position: relative;
+        }
+
+        .typing:after {
+            content: "";
+            position: absolute;
+            width: 3%;
+            height: 100%;
+            border-right: 2px solid white;
+            animation: blink .3s linear infinite;
+
+
+        }
+
+        @keyframes blink {
+            0% {
+                visibility: hidden;
+
+            }
+
+            50% {
+                visibility: visible;
+                opacity: 0.2;
+
+            }
+
+            100% {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        <p>
+            welcome to student management system
+    </h3>
+    </p>
+    <div class="main">
+        <h4>login as:</h4>
+
+        <div class="center">
+            <a href="./adminLogin.php">admin</a>
+            <a href="./students/students.php">student</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Developed By <span class="typing"> samyog_subedi & diwas_kuwar</span> </p>
+    </div>
+
+    <script>
+        const texts = ["Samyog_Subedi", "Diwas_Kuwar"];
+        let count = 0;
+        let index = 0;
+        let currenttext = "";
+        let letter = "";
+        (function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currenttext = texts[count];
+            letter = currenttext.slice(0, ++index);
+            document.querySelector('.typing').textContent = letter;
+            if (letter.length === currenttext.length) {
+                count++;
+                index = 0;
+            }
+            setTimeout(type, 400);
+
+        }());
+
+    </script>
+</body>
+
+</html>
